@@ -1,0 +1,10 @@
+<a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+
+<div class="col-6 border border-dark">
+  <form (submit)="onSubmit()">
+    <label for="newauthor">Name:</label>
+    <input id="newauthor" type="text" class="form-control" name="newAuthor.name" [(ngModel)]="newAuthor.name" placeholder="Enter name">
+    <button [routerLink]="['/']" routerLinkActive="router-link-active" class="btn btn-secondary mr-2">Cancel</button>
+    <input type="submit" class="btn btn-primary" value="Submit"/>
+  </form>
+</div>
